@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "AddPlayer";
+}
+
+<h1>Please enter the first and last name of the player to add them to the Lakers roster!</h1>
+<div>
+    @ViewData["ErrorMessage"]
+</div>
+<form method="post" action="/Players/Success">
+    First Name : <input style="margin:0 0 0 52px" type="text" name="FirstName" /><br />
+    Last Name : <input  style="margin:0 0 0 53px" type="text" name="LastName" /><br />
+    Age : <input style="margin:0 0 0 100px" type="number" name="Age" /><br />
+    Height in Inches : <input style="margin:0 0 0 14px" type="number" name="Height" /><br />
+    Weight in Pounds: <input style="margin:0 0 0 8px" type="number" name="Weight" /><br />
+    <input type="submit" />
+
+
+</form>
+
